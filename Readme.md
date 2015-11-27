@@ -3,7 +3,7 @@
 Simple Multimedia helper Api
 
 [![npm version](https://badge.fury.io/js/multimedia-helper.png)](http://badge.fury.io/js/multimedia-helper)
-[![GitHub version](https://badge.fury.io/gh/jjtortosa%multimedia-helper.png)](http://badge.fury.io/gh/jjtortosa%multimedia-helper)
+[![GitHub version](https://badge.fury.io/gh/jjtortosa%2Fmultimedia-helper.png)](http://badge.fury.io/gh/jjtortosa%2Fmultimedia-helper)
 
 [![NPM](https://nodei.co/npm/multimedia-helper.png?downloads=true&downloadRank=true)](https://nodei.co/npm/multimedia-helper/) [![NPM](https://nodei.co/npm-dl/multimedia-helper.png?months=6&height=3)](https://nodei.co/npm/multimedia-helper/)
 
