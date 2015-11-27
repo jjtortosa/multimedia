@@ -1,12 +1,12 @@
 
 function Media(filepath, cb){
-	Media.madiainfo(filepath, function(err, mi){
+	Media.mediainfo(filepath, function(err, mi){
 		if(err)
 			return cb(err);
 		
 		var model;
 		
-		switch(mi['Internet media type'].split('/')[0]){
+		switch(mi.General['Internet media type'].split('/')[0]){
 			case 'audio':
 				model = Media.Audio;
 				break;
@@ -16,15 +16,15 @@ function Media(filepath, cb){
 				break;
 				
 			default:
-				return cb(new Error('Not a media file'));
+				return cb();//new Error('Not a media file'));
 		}
 		
-		return model(filepath).processMediainfo(mi);
+		cb(null, model(filepath).processMediainfo(mi));
 	});
 }
 
 Media.Audio = require('./lib/audio');
 Media.Video = require('./lib/video');
-Media.madiainfo = require('./lib/madiainfo');
+Media.mediainfo = require('./lib/mediainfo');
 
 module.exports = Media;
