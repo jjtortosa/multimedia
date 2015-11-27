@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.nbinfo
+_nbinfo
+pakmanaged.js
+!Icon
+nbproject/
+bower_components/
+dsresponse_log.json
+npm-debug.log
