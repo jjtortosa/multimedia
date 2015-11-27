@@ -2,22 +2,22 @@
 
 Simple Multimedia helper Api
 
-[![npm version](https://badge.fury.io/js/mongui.png)](http://badge.fury.io/js/multimedia)
-[![GitHub version](https://badge.fury.io/gh/jjtortosa%2Fmultimedia.png)](http://badge.fury.io/gh/jjtortosa%multimedia)
+[![npm version](https://badge.fury.io/js/multimedia-helper.png)](http://badge.fury.io/js/multimedia-helper)
+[![GitHub version](https://badge.fury.io/gh/jjtortosa%multimedia-helper.png)](http://badge.fury.io/gh/jjtortosa%multimedia-helper)
 
-[![NPM](https://nodei.co/npm/multimedia.png?downloads=true&downloadRank=true)](https://nodei.co/npm/multimedia/) [![NPM](https://nodei.co/npm-dl/multimedia.png?months=6&height=3)](https://nodei.co/npm/multimedia/)
+[![NPM](https://nodei.co/npm/multimedia-helper.png?downloads=true&downloadRank=true)](https://nodei.co/npm/multimedia-helper/) [![NPM](https://nodei.co/npm-dl/multimedia-helper.png?months=6&height=3)](https://nodei.co/npm/multimedia-helper/)
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install multimedia --save
+npm install multimedia-helper --save
 ```
 
 ## Usage
 
-var mm = require('multimedia')
+var mm = require('multimedia-helper')
 
 mm.mediainfo(filepath, function(err, mediainfo){
 	assert.ifError(err);
