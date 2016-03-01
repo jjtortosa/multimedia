@@ -1,30 +1,31 @@
+"use strict";
 
-function Media(filepath, cb){
-	Media.mediainfo(filepath, function(err, mi){
-		if(err)
-			return cb(err);
-		
+const mediainfo = require('./lib/mediainfo');
+const audio = require('./lib/audio');
+const video = require('./lib/video');
+
+
+module.exports = filepath => {
+	return mediainfo(filepath).then(mi => {
 		var model;
-		
+
 		switch(mi.General['Internet media type'].split('/')[0]){
 			case 'audio':
-				model = Media.Audio;
+				model = audio;
 				break;
-				
+
 			case 'video':
-				model = Media.Video;
+				model = video;
 				break;
-				
+
 			default:
-				return cb();//new Error('Not a media file'));
+				throw new Error('Not a media file');
 		}
-		
-		cb(null, model(filepath).processMediainfo(mi));
+
+		return new model(filepath).processMediainfo(mi);
 	});
-}
+};
 
-Media.Audio = require('./lib/audio');
-Media.Video = require('./lib/video');
-Media.mediainfo = require('./lib/mediainfo');
-
-module.exports = Media;
+module.exports.Audio = audio;
+module.exports.Video = video;
+module.exports.mediainfo = mediainfo;
