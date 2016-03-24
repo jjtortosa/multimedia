@@ -1,11 +1,7 @@
-node_modules/
+node_modules
 .DS_Store
-.nbinfo
 .idea
-_nbinfo
 pakmanaged.js
 !Icon
-nbproject/
-bower_components/
-dsresponse_log.json
+bower_components
 npm-debug.log
