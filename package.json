@@ -1,18 +1,18 @@
 {
 	"name": "multimedia-helper",
 	"description": "Simple Multimedia helper Api",
-	"version": "1.0.5-beta2",
+	"version": "1.0.6",
 	"repository": {
-		"type": "git"
-	,	"url" : "https://github.com/jjtortosa/multimedia-helper.git"
+		"type": "git",
+		"url" : "https://github.com/jjtortosa/multimedia-helper.git"
 	},
 	"keywords": ["util", "functional", "server"],
 	"author": "jj",
 	"contributors": [],
 	"main": "index",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jjtortosa/multimedia-helper/issues"
-  },
-  "homepage": "https://github.com/jjtortosa/multimedia-helper"
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jjtortosa/multimedia-helper/issues"
+	},
+	"homepage": "https://github.com/jjtortosa/multimedia-helper"
 }
